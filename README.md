@@ -11,9 +11,7 @@
 
 ###Components
 
-* Html5shiv
-* Normalize.css
-* Fastlick
+* jQuery
 * jQuery Mobile
 
 

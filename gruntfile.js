@@ -27,7 +27,8 @@ var dist = {
 
 var config = {
   src: 'src/',
-  dest: 'dist/'
+  dest: 'dist/',
+  vendor: 'bower_components/'
 };
 
 
@@ -48,18 +49,27 @@ module.exports = function (grunt) {
             flatten: true,
             src: [
               src.vendor + 'html5shiv/dist/html5shiv.min.js',
-              src.vendor + 'jquery/dist/jquery.min.js',
               src.vendor + 'fastclick/lib/fastclick.js',
-              src.vendor + 'slick.js/slick/slick.min.js'
+              src.vendor + 'jquery/jquery.min.js',
+              src.vendor + 'jquery-mobile-bower/js/jquery.mobile-1.4.5.min.js'
             ],
             dest: src.js + 'vendor'
-          }, {
+          },
+          {
             expand: true,
             flatten: true,
             src: [
-              src.vendor + 'normalize-css/normalize.css'
+              src.vendor + 'jquery-mobile-bower/css/jquery.mobile-1.4.5.min.css'
             ],
-            dest: src.css
+            dest: src.css + 'vendor'
+          },
+          {
+            expand: true,
+            cwd: '<%= config.vendor %>/jquery-mobile-bower/css/images/',
+            dest: '<%= config.src %>/css/images/',
+            src: [
+              '{,*/}*.*'
+            ]
           }
         ]
       },
@@ -70,9 +80,9 @@ module.exports = function (grunt) {
             cwd: '<%= config.src %>',
             dest: '<%= config.dest %>',
             src: [
-              'css/{,*/}*.css',
+              'css/**/*',
               'img/**/*',
-              'js/{,*/}*.js',
+              'js/{,*/}*.*',
               'fonts/{,*/}*.*',
               'video/{,*/}*.*',
               '{,*/}*.html'
@@ -90,10 +100,15 @@ module.exports = function (grunt) {
           {
             src: [
               src.js + 'custom.js',
-              src.js + 'vendor/fastclick.min.js',
-              src.js + 'vendor/slick.min.js'
+              src.js + 'vendor/jquery.mobile-1.4.5.min.js'
             ],
             dest: src.js + 'plugins.js'
+          },
+          {
+            src: [
+              src.css + 'vendor/jquery.mobile-1.4.5.min.css'
+            ],
+            dest: src.css + 'plugins.css'
           }
         ]
       }
@@ -130,19 +145,7 @@ module.exports = function (grunt) {
     },
     uglify: {
       dev: {
-        files: [{
-          expand: true,
-          cwd: src.js + 'vendor',
-          src: 'fastclick.js',
-          dest: src.js + 'vendor',
-          ext: '.min.js'
-        }, {
-          expand: true,
-          cwd: src.js + 'vendor',
-          src: 'jquery.nav.js',
-          dest: src.js + 'vendor',
-          ext: '.nav.min.js'
-        }]
+        files: []
       }
     },
     watch: {
