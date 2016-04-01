@@ -6,7 +6,9 @@
  */
 $(document).ready(function () {
 
-	/** Fastclick */
-	FastClick.attach(document.body);
-
+	$("body>[data-role='panel']").each(function () {
+		$(this).panel();
+		$("[data-role='listview']", this).listview();
+		$(this).trigger("create");
+	});
 });

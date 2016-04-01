@@ -3,23 +3,170 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>mCity</title>
+	<title>О программе - mCity</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
 
-	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/plugins.css">
 	<link rel="stylesheet" href="css/main.css">
-
-	<!--[if lte IE 9]>
-	<link rel="stylesheet" href="css/ie.css">
-	<script src="js/vendor/html5shiv.min.js"></script>
-	<![endif]-->
 </head>
 <body>
 
-	<script src="js/vendor/jquery.min.js"></script>
-	<script src="js/plugins.js"></script>
-	<script src="js/main.js"></script>
+<div id="index" data-role="page">
+	<div role="main" class="ui-content">
+		<p>mCity</p>
+		<h1>Гид по Moscow City</h1>
+		<p>Места. События. Акции.</p>
+		<a href="#events" data-transition="slideup">Начать</a>
+	</div>
+</div>
+
+<nav id="menu" data-role="panel" data-position="right" data-display="push" data-position-fixed="true" data-animate="false" data-theme="a">
+	<h2>Меню</h2>
+	<ul data-role="listview">
+		<!-- li data-icon="false"><a href="#">Магазины</a></li>
+		<li data-icon="false"><a href="#">Рестораны</a></li>
+		<li data-icon="false"><a href="#">Развлечения</a></li>
+		<li data-icon="false"><a href="#">Услуги</a></li>
+		<li data-icon="false"><a href="#">Достопримечательности</a></li -->
+		<li data-icon="false"><a href="#events" data-transition="none">События</a></li>
+		<!-- li data-icon="false"><a href="#" data-transition="none">Акции</a></li -->
+		<li data-icon="false"><a href="#about" data-transition="none">О программе</a></li>
+		<li data-icon="false"><a href="#" data-transition="none">Настройки</a></li>
+	</ul>
+</nav>
+
+
+<section id="events" data-role="page">
+
+	<header data-role="header" role="banner" data-position="fixed" data-id="menu">
+		<h2>События</h2>
+		<a href="#menu" class="ui-btn-right" data-icon="bars" data-iconpos="notext" data-transition="none">Меню</a>
+	</header>
+
+	<main role="main" class="ui-content">
+		<ul data-role="listview">
+			<li data-icon="false">
+				<a href="#">
+					<img src="img/event-1.jpg" alt="Новый магазин в башне Империя">
+					<h3>Новый магазин в башне Империя</h3>
+					<p>
+						<time datetime="2016-03-13">13.03.2016</time>
+					</p>
+					<p>Торгово-развлекательный центр АФИМОЛЛ Сити является флагманским проектом девелоперской компании AFI Development.</p>
+					<p class="tags">магазин, shop, lacoste, поло, купить</p>
+					<p>Подробнее</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="#">
+					<img src="img/event-1.jpg" alt="Новый магазин в башне Империя">
+					<h3>Новый магазин в башне Империя</h3>
+					<p>
+						<time datetime="2016-03-13">13.03.2016</time>
+					</p>
+					<p>Торгово-развлекательный центр АФИМОЛЛ Сити является флагманским проектом девелоперской компании AFI Development.</p>
+					<p class="tags">магазин, shop, lacoste, поло, купить</p>
+					<p>Подробнее</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="#">
+					<img src="img/event-1.jpg" alt="Новый магазин в башне Империя">
+					<h3>Новый магазин в башне Империя</h3>
+					<p>
+						<time datetime="2016-03-13">13.03.2016</time>
+					</p>
+					<p>Торгово-развлекательный центр АФИМОЛЛ Сити является флагманским проектом девелоперской компании AFI Development.</p>
+					<p class="tags">магазин, shop, lacoste, поло, купить</p>
+					<p>Подробнее</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="#">
+					<img src="img/event-1.jpg" alt="Новый магазин в башне Империя">
+					<h3>Новый магазин в башне Империя</h3>
+					<p>
+						<time datetime="2016-03-13">13.03.2016</time>
+					</p>
+					<p>Торгово-развлекательный центр АФИМОЛЛ Сити является флагманским проектом девелоперской компании AFI Development.</p>
+					<p class="tags">магазин, shop, lacoste, поло, купить</p>
+					<p>Подробнее</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="#">
+					<img src="img/event-1.jpg" alt="Новый магазин в башне Империя">
+					<h3>Новый магазин в башне Империя</h3>
+					<p>
+						<time datetime="2016-03-13">13.03.2016</time>
+					</p>
+					<p>Торгово-развлекательный центр АФИМОЛЛ Сити является флагманским проектом девелоперской компании AFI Development.</p>
+					<p class="tags">магазин, shop, lacoste, поло, купить</p>
+					<p>Подробнее</p>
+				</a>
+			</li>
+			<li data-icon="false">
+				<a href="#">
+					<img src="img/event-1.jpg" alt="Новый магазин в башне Империя">
+					<h3>Новый магазин в башне Империя</h3>
+					<p>
+						<time datetime="2016-03-13">13.03.2016</time>
+					</p>
+					<p>Торгово-развлекательный центр АФИМОЛЛ Сити является флагманским проектом девелоперской компании AFI Development.</p>
+					<p class="tags">магазин, shop, lacoste, поло, купить</p>
+					<p>Подробнее</p>
+				</a>
+			</li>
+		</ul>
+	</main>
+</section>
+
+
+<article id="about" data-role="page">
+	<header data-role="header" data-position="fixed">
+		<h2>О программе</h2>
+		<a href="#menu" class="ui-btn-right" data-icon="bars" data-iconpos="notext" data-transition="none">Меню</a>
+	</header>
+	<main role="main" class="ui-content">
+		<p>Торгово-развлекательный центр &laquo;АФИМОЛЛ Сити&raquo; начал свою работу в 2011 году.</p>
+		<p>ТРЦ расположен в Центральном ядре крупнейшего и самого амбициозного инвестиционного делового проекта в Европе – московского международного делового центра &laquo;Москва-Сити&raquo;. Это первый, не имеющий аналогов, проект в России, который сочетает в себе инновационность архитектурных
+			решений и многофункциональную инфраструктуру.</p>
+		<p>
+			ТРЦ &laquo;АФИМОЛЛ Сити&raquo; &ndash; это не только шопинг, это еще и море развлечений для всей семьи.<br>
+			Здесь расположены многозальный кинотеатр сети &laquo;Формула Кино&raquo; &ndash; первый в центре города кинотеатр формата IMAX, а также популярные интерактивные образовательно-развлекательные выставки.<br>
+			В &laquo;АФИМОЛЛ Сити&raquo; регулярно проводятся праздники для детей, а также презентации и мастер-классы для взрослых.
+		</p>
+		<p>Торгово-развлекательный центр &laquo;АФИМОЛЛ Сити&raquo; начал свою работу в 2011 году.</p>
+		<p>ТРЦ расположен в Центральном ядре крупнейшего и самого амбициозного инвестиционного делового проекта в Европе – московского международного делового центра &laquo;Москва-Сити&raquo;. Это первый, не имеющий аналогов, проект в России, который сочетает в себе инновационность архитектурных
+			решений и многофункциональную инфраструктуру.</p>
+		<p>
+			ТРЦ &laquo;АФИМОЛЛ Сити&raquo; &ndash; это не только шопинг, это еще и море развлечений для всей семьи.<br>
+			Здесь расположены многозальный кинотеатр сети &laquo;Формула Кино&raquo; &ndash; первый в центре города кинотеатр формата IMAX, а также популярные интерактивные образовательно-развлекательные выставки.<br>
+			В &laquo;АФИМОЛЛ Сити&raquo; регулярно проводятся праздники для детей, а также презентации и мастер-классы для взрослых.
+		</p>
+		<p>Торгово-развлекательный центр &laquo;АФИМОЛЛ Сити&raquo; начал свою работу в 2011 году.</p>
+		<p>ТРЦ расположен в Центральном ядре крупнейшего и самого амбициозного инвестиционного делового проекта в Европе – московского международного делового центра &laquo;Москва-Сити&raquo;. Это первый, не имеющий аналогов, проект в России, который сочетает в себе инновационность архитектурных
+			решений и многофункциональную инфраструктуру.</p>
+		<p>
+			ТРЦ &laquo;АФИМОЛЛ Сити&raquo; &ndash; это не только шопинг, это еще и море развлечений для всей семьи.<br>
+			Здесь расположены многозальный кинотеатр сети &laquo;Формула Кино&raquo; &ndash; первый в центре города кинотеатр формата IMAX, а также популярные интерактивные образовательно-развлекательные выставки.<br>
+			В &laquo;АФИМОЛЛ Сити&raquo; регулярно проводятся праздники для детей, а также презентации и мастер-классы для взрослых.
+		</p>
+		<p>Торгово-развлекательный центр &laquo;АФИМОЛЛ Сити&raquo; начал свою работу в 2011 году.</p>
+		<p>ТРЦ расположен в Центральном ядре крупнейшего и самого амбициозного инвестиционного делового проекта в Европе – московского международного делового центра &laquo;Москва-Сити&raquo;. Это первый, не имеющий аналогов, проект в России, который сочетает в себе инновационность архитектурных
+			решений и многофункциональную инфраструктуру.</p>
+		<p>
+			ТРЦ &laquo;АФИМОЛЛ Сити&raquo; &ndash; это не только шопинг, это еще и море развлечений для всей семьи.<br>
+			Здесь расположены многозальный кинотеатр сети &laquo;Формула Кино&raquo; &ndash; первый в центре города кинотеатр формата IMAX, а также популярные интерактивные образовательно-развлекательные выставки.<br>
+			В &laquo;АФИМОЛЛ Сити&raquo; регулярно проводятся праздники для детей, а также презентации и мастер-классы для взрослых.
+		</p>
+	</main>
+</article>
+
+<script src="js/vendor/jquery.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
