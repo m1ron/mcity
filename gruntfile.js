@@ -37,7 +37,7 @@ module.exports = function (grunt) {
     config: config,
 
     clean: {
-      pre: [dist.root, src.css, src.js + 'vendor'],
+      pre: [dist.root, src.js + 'vendor'],
       after: [src.js + 'vendor/fastclick.js', src.css + 'temp'],
       dist: [dist.js + 'custom.js']
     },
@@ -106,7 +106,8 @@ module.exports = function (grunt) {
           },
           {
             src: [
-              src.css + 'vendor/jquery.mobile-1.4.5.min.css'
+              src.css + 'vendor/jquery.mobile-1.4.5.min.css',
+              src.css + 'vendor/jquery.mobile.icons.min.css'
             ],
             dest: src.css + 'plugins.css'
           }
