@@ -11,4 +11,6 @@ $(document).ready(function () {
 		$("[data-role='listview']", this).listview();
 		$(this).trigger("create");
 	});
+
+	$('.ui-menu-list').find('.dark').eq(0).addClass('dark-first-child');
 });
