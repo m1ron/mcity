@@ -1,5 +1,5 @@
 # mCity
-*Application*
+*jQuery Mobile application*
 
 ###Technologies
 
